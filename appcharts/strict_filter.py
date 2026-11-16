@@ -11,7 +11,7 @@ sell-side ads roles.
 import re
 
 HARD_EXCLUDE = [
-    r'partner', r'engineer', r'data scien', r'\bdata\b', r'design', r'content',
+    r'\bpartner\b', r'engineer', r'data scien', r'\bdata\b', r'design', r'content',
     r'\bbrand\b', r'product marketing', r'product growth', r'growth product',
     r'growth analyt', r'communications', r'\bpr\b',
     r'public relations', r'demand generation', r'demand gen', r'lifecycle', r'\bcrm\b',
@@ -27,7 +27,9 @@ HARD_EXCLUDE = [
     r'\bcampus\b', r'\bclient\b',
 ]
 BUYER_RES = [
-    r'growth marketing', r'head of growth', r'\bvp\b.{0,12}\bgrowth\b', r'director.{0,10}\bgrowth\b',
+    r'growth marketing', r'head of growth', r'\bvp\b.{0,12}\bgrowth\b',
+    r'\bsvp\b.{0,12}\bgrowth\b', r'senior vice president.{0,12}\bgrowth\b',
+    r'\bevp\b.{0,12}\bgrowth\b', r'director.{0,10}\bgrowth\b',
     r'growth manager', r'growth lead', r'growth director', r'chief growth officer',
     r'performance marketing', r'performance media', r'user acquisition',
     r'\bua manager\b', r'\bua lead\b', r'head of ua\b',
