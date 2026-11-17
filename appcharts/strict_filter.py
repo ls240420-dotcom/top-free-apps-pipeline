@@ -12,6 +12,8 @@ import re
 
 HARD_EXCLUDE = [
     r'\bpartner\b', r'engineer', r'data scien', r'\bdata\b', r'design', r'content',
+    r'executive assistant', r'administrative assistant', r'\bassistant to\b',
+    r'chief of staff',
     r'\bbrand\b', r'product marketing', r'product growth', r'growth product',
     r'growth analyt', r'communications', r'\bpr\b',
     r'public relations', r'demand generation', r'demand gen', r'lifecycle', r'\bcrm\b',
@@ -31,7 +33,8 @@ BUYER_RES = [
     r'\bsvp\b.{0,12}\bgrowth\b', r'senior vice president.{0,12}\bgrowth\b',
     r'\bevp\b.{0,12}\bgrowth\b', r'director.{0,10}\bgrowth\b',
     r'growth manager', r'growth lead', r'growth director', r'chief growth officer',
-    r'performance marketing', r'performance media', r'user acquisition',
+    r'chief growth', r'performance marketing', r'performance media', r'user acquisition',
+    r'user aquisition',
     r'\bua manager\b', r'\bua lead\b', r'head of ua\b',
     r'paid media', r'paid acquisition', r'paid advertis', r'app growth', r'mobile growth',
 ]
